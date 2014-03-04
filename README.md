@@ -9,4 +9,4 @@ How to:
 
 ### Laravel_Blade.xml ###
 
-![Laravel Blade Screenshot](http://)
+![Laravel Blade Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/laravel-blade-screenshot.png)
