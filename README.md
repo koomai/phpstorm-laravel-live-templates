@@ -1,4 +1,12 @@
-phpstorm-laravel-live-templates
-===============================
+### Laravel Live Templates for PhpStorm ###
 
-Laravel Live Templates for PhpStorm
+How to:
+
+1) Download and copy the *xml* file(s) to your templates folder `~/Library/Preferences/WebIde70/templates` (or the equivalent path of your OS)
+
+
+2) Restart PhpStorm
+
+### Laravel_Blade.xml ###
+
+![Laravel Blade Screenshot](http://)
