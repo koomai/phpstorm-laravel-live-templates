@@ -134,9 +134,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="@layout" value="@extends('$START$')&#10;&#10;@section('$SECTION$')&#10;    $END$&#10;@stop" description="Blade Template Skeleton" toReformat="false" toShortenFQNames="true">
-    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="@layout" value="@extends('layouts.default')&#10;&#10;@section('sidebar')&#10;    @parent&#10;    &#10;@stop&#10;&#10;@section('content')&#10;&#9;@include('forms.create')&#10;&#9;&#10;@stop" description="Blade template skeleton" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -158,7 +156,7 @@
     </context>
   </template>
   <template name="@section" value="@section('$SECTION$')&#10;    $END$&#10;@$STOP$" description="Blade @section" toReformat="false" toShortenFQNames="true">
-    <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECTION" expression="" defaultValue="&quot;content&quot;" alwaysStopAt="true" />
     <variable name="STOP" expression="" defaultValue="&quot;stop&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
@@ -270,7 +268,7 @@
     </context>
   </template>
   <template name="@sectionx" value="{{-- Extend @section from parent --}}&#10;@section('$SECTION$')&#10;    @parent&#10;    &#10;    $END$&#10;@stop" description="Blade @section extended" toReformat="false" toShortenFQNames="true">
-    <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECTION" expression="" defaultValue="&quot;content&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
