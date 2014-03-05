@@ -18,3 +18,7 @@ e.g. `~/Library/Preferences/WebIde70/templates` on OS X for PhpStorm 7
 ### Laravel_Blade.xml ###
 
 ![Laravel Blade Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/laravel-blade-screenshot.png)
+
+==========
+#### Other goodies ####
+Take your PhpStorm productivity to the next level with these [keyboard shortcuts](https://gist.github.com/koomai/9340189).
