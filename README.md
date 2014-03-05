@@ -17,7 +17,19 @@ e.g. `~/Library/Preferences/WebIde70/templates` on OS X for PhpStorm 7
 
 ### Laravel_Blade.xml ###
 
-![Laravel Blade Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/laravel-blade-screenshot.png)
+![Laravel Blade Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/laravel-blade-screenshot.png)
+
+### Laravel_Schema.xml ###
+
+It's hard to remember shortcuts when there are a large number of options. A more efficient way is to take advantage of PhpStorm's *Insert Live Template* shortcut. Type as few or as many letters as you want and press `Cmd + J`. 
+
+Type `Sc` or `Sch` or `Schema` and press Cmd + J
+
+![Laravel Schema Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/schema-demo.png)
+
+Type `$ta` or `$tab` or `$table` and press Cmd + J. As you continue typing, the options get filtered.
+
+![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/table-demo.png)
 
 ==========
 #### Other goodies ####
