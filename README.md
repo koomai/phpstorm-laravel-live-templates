@@ -31,6 +31,14 @@ Type `$ta` or `$tab` or `$table` and press `Cmd + J`. As you continue typing, th
 
 ![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/table-demo.png)
 
+### Laravel_Routes.xml ###
+
+![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-demo.png)
+
+All Route verbs are labelled `get` by default, but you can change it easily once the shortcut is expanded:
+
+![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-enum-demo.png)
+
 ==========
 #### Other goodies ####
 Take your PhpStorm productivity to the next level with these [keyboard shortcuts](https://gist.github.com/koomai/9340189).
