@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Laravel-Routes">
+  <template name="Route::get" value="Route::$VERB$('$NAME$', function()&#10;{&#10;    $END$&#10;});" description="Basic Route with Closure (get, post, any)" toReformat="true" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;any&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::match" value="Route::match(['$VERB1$', '$VERB2$'], '$ROUTE$', function()&#10;{&#10;    $END$&#10;});" description="Registering A Route For Multiple Verbs" toReformat="false" toShortenFQNames="true">
+    <variable name="VERB1" expression="enum(&quot;GET&quot;, &quot;POST&quot;, &quot;DELETE&quot;, &quot;PUT&quot;, &quot;PATCH&quot;)" defaultValue="&quot;GET&quot;" alwaysStopAt="true" />
+    <variable name="VERB2" expression="enum(&quot;POST&quot;, &quot;GET&quot;, &quot;DELETE&quot;, &quot;PUT&quot;, &quot;PATCH&quot;)" defaultValue="&quot;POST&quot;" alwaysStopAt="true" />
+    <variable name="ROUTE" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::https" value="Route::$VERB$('$NAME$', ['https', function()&#10;{&#10;    $END$&#10;}]);" description="Force a Route to be served over HTTPS" toReformat="true" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;any&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::getWithParam" value="Route::$VERB$('$NAME$', function($PARAM$)&#10;{&#10;    $END$&#10;});" description="Route parameters with defaults" toReformat="true" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;any&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;user/{name?}&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;$name = 'John'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::pattern" value="Route::pattern('$NAME$', '$PATTERN$');" description="Define Global Patterns (Regex)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;id&quot;" alwaysStopAt="true" />
+    <variable name="PATTERN" expression="" defaultValue="&quot;[0-9]+&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::filter" value="Route::filter('$NAME$', function()&#10;{&#10;&#9;$END$&#10;});" description="Define A Route Filter" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;old&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::getWithFilters" value="Route::$VERB$('$NAME$', [$FILTER$, function()&#10;{&#10;    $END$&#10;}]);" description="Attaching Filter(s) to a route" toReformat="true" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;any&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;user&quot;" alwaysStopAt="true" />
+    <variable name="FILTER" expression="" defaultValue="&quot;'before' =&gt; 'auth|old'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::getNamedRoute" value="Route::$VERB$('$NAME$', [$FILTER$, function()&#10;{&#10;    $END$&#10;}]);" description="Create Named Route" toReformat="true" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;any&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;user/profile&quot;" alwaysStopAt="true" />
+    <variable name="FILTER" expression="" defaultValue="&quot;'as' =&gt; 'profile'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::group" value="Route::group([$FILTER$], function()&#10;{&#10;    $END$&#10;});" description="Create a Group of Routes" toReformat="true" toShortenFQNames="true">
+    <variable name="FILTER" expression="" defaultValue="&quot;'before' =&gt; 'auth'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::getController" value="Route::$VERB$('$NAME$', '$ACTION$');$END$" description="Route to Controller Action" toReformat="true" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;get&quot;, &quot;post&quot;, &quot;any&quot;)" defaultValue="&quot;get&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;user&quot;" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="&quot;UserController@showProfile&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Route::controller" value="Route::controller('$NAME$', '$CONTROLLER$');$END$" description="Route to a RESTful Controller" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;users&quot;" alwaysStopAt="true" />
+    <variable name="CONTROLLER" expression="" defaultValue="&quot;UsersController&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
