@@ -39,6 +39,11 @@ All Route verbs are labelled `get` by default, but you can change it easily once
 
 ![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-enum-demo.png)
 
+### Laravel_Cache.xml ###
+
+![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/cache-demo.png)
+
+
 ==========
 #### Other goodies ####
 Take your PhpStorm productivity to the next level with these [keyboard shortcuts](https://gist.github.com/koomai/9340189).
