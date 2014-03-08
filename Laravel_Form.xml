@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Laravel-Form">
+  <template name="Form::open" value="{{ Form::open(['$TYPE$' =&gt; '$TARGET$'$OPTIONS$]) }}&#10;&#9;$END$&#10;{{ Form::close() }}" description="Open a Form" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;route&quot;, &quot;url&quot;, &quot;action&quot;)" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="TARGET" expression="" defaultValue="&quot;route.name&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="" defaultValue="&quot;, 'method' =&gt; 'post'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::openWithFileUpload" value="{{ Form::open(['$TYPE$' =&gt; '$TARGET$',$OPTIONS$ 'files' =&gt; true]) }}&#10;&#9;$END$&#10;{{ Form::close() }}" description="Open a Form and Enable File Upload" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;route&quot;, &quot;url&quot;, &quot;action&quot;)" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="TARGET" expression="" defaultValue="&quot;route.name&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="" defaultValue="&quot; 'method' =&gt; 'post'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::model" value="{{ Form::model($MODEL$, ['$TYPE$' =&gt; $TARGET$$OPTIONS$]) }}&#10;&#9;$END$&#10;{{ Form::close() }}" description="Open a Form with Model Binding" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="&quot;$user&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;route&quot;, &quot;url&quot;, &quot;action&quot;)" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="TARGET" expression="" defaultValue="&quot;['user.update', $user-&gt;id]&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="" defaultValue="&quot;, 'method' =&gt; 'post'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::label" value="{{ Form::label('$NAME$', '$DEFAULT$'$OPTION$) }}$END$" description="Generate a Label element" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;email&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'control-label']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::text" value="{{ Form::text('$NAME$', '$DEFAULT$'$OPTION$) }}$END$" description="Generate a Text Input element (name, default, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;email&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::email" value="{{ Form::email('$NAME$', '$DEFAULT$'$OPTION$) }}$END$" description="Generate an Email Input element (name, default, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;email&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::checkbox" value="&lt;label&gt;&#10;&#9;{{ Form::checkbox('$NAME$', '$DEFAULT$', $CHECKED$ ['id' =&gt; '$ID$']) }}&#10;&#9;$TEXT$&#10;&lt;/label&gt;$END$" description="Generate a Checkbox element (name, value, checked, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CHECKED" expression="enum(&quot;null, &quot;, &quot;true, &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="NAME" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="&quot;Some text here&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::radio" value="&lt;label&gt;&#10;&#9;{{ Form::radio('$NAME$', '$DEFAULT$', $CHECKED$ ['id' =&gt; '$ID$']) }}&#10;&#9;$TEXT$&#10;&lt;/label&gt;$END$" description="Generate a Radio element (name, value, checked, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="CHECKED" expression="enum(&quot;null, &quot;, &quot;true, &quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="NAME" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="&quot;Some text here&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::password" value="{{ Form::password('$NAME$'$OPTION$) }}$END$" description="Generate a Password Input element (name, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;password&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::input" value="{{ Form::file('$NAME$'$OPTION$) }}$END$" description="Generate a File Input element (name, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;filename&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::select" value="{{ Form::select('$NAME$', $LIST$ $DEFAULT$ $OPTION$) }}$END$" description="Generate a Drop-down list (name, array of options, default, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="LIST" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;, null&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::selectRange" value="{{ Form::selectRange('$NAME$', $FROM$, $TO$ $DEFAULT$ $OPTION$) }}$END$" description="Generate a Drop-down list with Range (name, from, to, default, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="FROM" expression="" defaultValue="&quot;1&quot;" alwaysStopAt="true" />
+    <variable name="TO" expression="" defaultValue="&quot;20&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;, null&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::selectMonth" value="{{ Form::selectMonth('$NAME$' $DEFAULT$ $OPTION$) }}$END$" description="Generate a Drop-down list with Months (name, default, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;Month&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;, null&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::submit" value="{{ Form::submit('$NAME$'$OPTION$) }}$END$" description="Generate a Submit button (value, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;Submit&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::macro" value="Form::macro('$NAME$', function()&#10;{&#10;    $END$&#10;});" description="Generate a Form Macro" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;macro&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
+
