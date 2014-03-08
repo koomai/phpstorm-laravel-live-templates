@@ -33,15 +33,19 @@ Type `$ta` or `$tab` or `$table` and press `Cmd + J`. As you continue typing, th
 
 ### Laravel_Routes.xml ###
 
-![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-demo.png)
+![Laravel Routes Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-demo.png)
 
 All Route verbs are labelled `get` by default, but you can change it easily once the shortcut is expanded:
 
-![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-enum-demo.png)
+![Laravel Routes Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-enum-demo.png)
 
 ### Laravel_Cache.xml ###
 
-![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/cache-demo.png)
+![Laravel Cache Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/cache-demo.png)
+
+### Laravel_Form.xml ###
+
+![Laravel Form Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/form-demo.png)
 
 
 ==========
