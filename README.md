@@ -31,7 +31,9 @@ For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `C
 
 ![Laravel Input Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/input-file-demo.png)
 
-![Laravel Input Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/request-demo.png)
+![Laravel Requests Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/request-demo.png)
+
+![Laravel Cookie Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/cookie-demo.png)
 
 ### Routes ###
 
