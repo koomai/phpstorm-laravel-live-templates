@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Laravel-Requests-and-Input">
+  <template name="Input::get" value="Input::get('$NAME$');$END$" description="Retrieve an Input value" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::getWithDefault" value="Input::get('$NAME$', '$DEFAULT$');$END$" description="Retrieve an Input value with Default" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;default&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::all" value="Input::all();$END$" description="Retrieve all Inputs" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::has" value="Input::has('$NAME$');$END$" description="Determine if Input Value is Present" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::only" value="Input::only($NAME$);$END$" description="Retrieve only some of the Request Input" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;'username', 'password'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::except" value="Input::except($NAME$);$END$" description="Retrieve only some of the Request Input" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;'username', 'password'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::flash" value="Input::flash();$END$" description="Flash Input to the Session" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::flashOnly" value="Input::flashOnly($NAME$);$END$" description="Flash only some Input to the Session" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;'username', 'password'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::flashExcept" value="Input::flashExcept($NAME$);$END$" description="Flash only some Input to the Session" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;'username', 'password'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::old" value="Input::old('$NAME$');$END$" description="Retrieve Old Data" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::oldWithDefault" value="Input::old('$NAME$', '$DEFAULT$');$END$" description="Retrieve Old Data with Default" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;default&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::file" value="Input::file('$NAME$');$END$" description="Retrieve Uploaded File" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::hasFile" value="Input::hasFile('$NAME$');$END$" description="Determine if File was Uploaded" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::fileMove" value="Input::file('$NAME$')-&gt;move($DESTINATION$, $FILENAME$);$END$" description="Move an Uploaded File" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DESTINATION" expression="" defaultValue="&quot;$destinationPath&quot;" alwaysStopAt="true" />
+    <variable name="FILENAME" expression="" defaultValue="&quot;$fileName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Input::fileProperty" value="Input::file('$NAME$')-&gt;$PROPERTY$;$END$" description="Get Property of Uploaded File" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="enum(&quot;getRealPath()&quot;, &quot;getClientOriginalName()&quot;, &quot;getClientOriginalExtension()&quot;, &quot;getSize()&quot;, &quot;getMimeType()&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Cookie::get" value="Cookie::get('$NAME$');$END$" description="Retrieve a Cookie value" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Cookie::make" value="Cookie::$TYPE$('$NAME$', $VALUE$, $MINUTES$);$END$" description="Make/Queue a Cookie" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;make&quot;, &quot;queue&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+    <variable name="MINUTES" expression="" defaultValue="&quot;1440&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Cookie::forever" value="Cookie::forever('$NAME$', $VALUE$);$END$" description="Make a Permanent Cookie" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Request::method" value="Request::$METHOD$($VALUE$);$END$ " description="Various Request Methods to examine HTTP Requests" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="enum(&quot;path&quot;, &quot;method&quot;, &quot;isMethod&quot;, &quot;url&quot;, &quot;segment&quot;, &quot;header&quot;, &quot;server&quot;, &quot;secure&quot;, &quot;ajax&quot;, &quot;isJson&quot;, &quot;wantsJson&quot;, &quot;format&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;'parameter'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
+
