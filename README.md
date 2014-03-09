@@ -15,21 +15,23 @@ e.g. `~/Library/Preferences/WebIde70/templates` on OS X for PhpStorm 7
 
 3) To see all templates, go to *Preferences->Live Templates* and expand the Template Group.
 
-### Laravel_Blade.xml ###
+
+It's hard to remember shortcuts when there are a large number of options. A more efficient way is to take advantage of PhpStorm's *Insert Live Template* shortcut. Type as few or as many letters as you want and press `Cmd + J`. Then continue typing to filter the options.
+
+For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `Cmd + J`. 
+
+**Note:** In the preview version of PhpStorm 8, live templates show up automatically as you type the first few letters. You should still press `Cmd + J` to filter out everything else (classes, variables, etc).
+
+### Blade ###
 
 ![Laravel Blade Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/laravel-blade-screenshot.png)
 
-### Laravel_Schema.xml ###
+### Requests & Input ###
+![Laravel Input Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/input-demo.png)
 
-It's hard to remember shortcuts when there are a large number of options. A more efficient way is to take advantage of PhpStorm's *Insert Live Template* shortcut. Type as few or as many letters as you want and press `Cmd + J`. 
+![Laravel Input Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/input-file-demo.png)
 
-Type `Sc` or `Sch` or `Schema` and press `Cmd + J`
-
-![Laravel Schema Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/schema-demo.png)
-
-Type `$ta` or `$tab` or `$table` and press `Cmd + J`. As you continue typing, the options get filtered.
-
-![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/table-demo.png)
+![Laravel Input Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/request-demo.png)
 
 ### Laravel_Routes.xml ###
 
@@ -38,6 +40,12 @@ Type `$ta` or `$tab` or `$table` and press `Cmd + J`. As you continue typing, th
 All Route verbs are labelled `get` by default, but you can change it easily once the shortcut is expanded:
 
 ![Laravel Routes Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-enum-demo.png)
+
+### Schema Builder ###
+
+![Laravel Schema Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/schema-demo.png)
+
+![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/table-demo.png)
 
 ### Laravel_Cache.xml ###
 
