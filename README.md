@@ -33,7 +33,7 @@ For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `C
 
 ![Laravel Input Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/request-demo.png)
 
-### Laravel_Routes.xml ###
+### Routes ###
 
 ![Laravel Routes Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-demo.png)
 
@@ -47,11 +47,11 @@ All Route verbs are labelled `get` by default, but you can change it easily once
 
 ![Laravel Tables Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/table-demo.png)
 
-### Laravel_Cache.xml ###
+### Cache ###
 
 ![Laravel Cache Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/cache-demo.png)
 
-### Laravel_Form.xml ###
+### Form ###
 
 ![Laravel Form Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/form-demo.png)
 
