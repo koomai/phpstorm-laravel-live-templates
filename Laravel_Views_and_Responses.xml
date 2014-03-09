@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Laravel-Views-and-Responses">
+  <template name="Response:json" value="Response::json($ARRAY$);$END$" description="Create a JSON Response" toReformat="false" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Response::JSONP" value="Response::json($ARRAY$)-&gt;setCallback($CALLBACK$);$END$" description="Create a JSONP Response" toReformat="false" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="&quot;Input::get('callback')&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Response::download" value="Response::download($PATH$, $NAME$, $HEADERS$);$END$" description="Create a File Download Response" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="&quot;$pathToFile&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;$name&quot;" alwaysStopAt="true" />
+    <variable name="HEADERS" expression="" defaultValue="&quot;$headers&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Response::macro" value="Response::macro('$NAME$', function($VALUE$)&#10;{&#10;    $END$&#10;});" description="Create a Response Macro" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Redirect::to" value="Redirect::$TYPE$('$NAME$'$PARAM$); $END$" description="Redirect to URL, Route or Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;to&quot;, &quot;route&quot;, &quot;action&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;profile&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Redirect::withFlashData" value="Redirect::$TYPE$('$NAME$'$PARAM$)-&gt;with('$KEY$', '$VALUE$');$END$" description="Redirect to URL, Route or Controller with Flash Data" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;to&quot;, &quot;route&quot;, &quot;action&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;profile&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;Login failed&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Redirect::withInput" value="Redirect::$TYPE$('$NAME$'$PARAM$)-&gt;withInput($DATA$);$END$" description="Redirect to URL, Route or Controller with Input" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;to&quot;, &quot;route&quot;, &quot;action&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;profile&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;Input::all()&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Redirect::withErrors" value="Redirect::$TYPE$('$NAME$'$PARAM$)-&gt;withErrors($DATA$);$END$" description="Redirect to URL, Route or Controller with Errors" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;to&quot;, &quot;route&quot;, &quot;action&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;profile&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;$validator&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Redirect::withInputAndErrors" value="Redirect::$TYPE$('$NAME$'$PARAM$)&#10;&#9;&#9;-&gt;withInput($INPUT$)&#10;&#9;&#9;-&gt;withErrors($DATA$);$END$" description="Redirect with Inputs and Errors" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="enum(&quot;to&quot;, &quot;route&quot;, &quot;action&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;profile&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <variable name="INPUT" expression="" defaultValue="&quot;Input::all()&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;$validator&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Response::make" value="Response::make($CONTENT$, $HEADER$);$END$" description="Create a Custom Response" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="&quot;$content&quot;" alwaysStopAt="true" />
+    <variable name="HEADER" expression="" defaultValue="&quot;$headers&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::make" value="View::make('$VIEW$', $DATA$);$END$" description="Create a View with Data" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="&quot;welcome&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;$data&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::makeWith" value="View::make('$VIEW$')-&gt;with('$KEY$', $VALUE$);$END$" description="Create a View, Pass Data using with()" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="&quot;welcome&quot;" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;$value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::makeCompact" value="View::make('$VIEW$', compact('$DATA$'));$END$" description="Create a View, Pass Data with compact()" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="&quot;welcome&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;user&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::share" value="View::share('$NAME$', '$VALUE$');$END$" description="Share Data across all Views" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;Steve&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::composer" value="View::composer('$NAME$', function($VALUE$)&#10;{&#10;    $END$&#10;});" description="Define a View Composer" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;$view&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::composerClass" value="View::composer('$NAME$', '$CLASS$');$END$" description="Define a Class-based View Composer" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;profile&quot;" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="&quot;ProfileComposer&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="View::creator" value="View::creator('$NAME$', function($VALUE$)&#10;{&#10;    $END$&#10;});" description="Register a View Creator" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;$view&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
+
