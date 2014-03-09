@@ -43,6 +43,14 @@ All Route verbs are labelled `get` by default, but you can change it easily once
 
 ![Laravel Routes Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/routes-enum-demo.png)
 
+### Views, Responses and Redirects ###
+
+![Laravel Views Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/view-demo.png)
+
+![Laravel Responses Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/response-demo.png)
+
+![Laravel Redirects Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/redirect-demo.png)
+
 ### Schema Builder ###
 
 ![Laravel Schema Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/schema-demo.png)
