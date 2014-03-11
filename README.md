@@ -22,6 +22,20 @@ For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `C
 
 **Note:** In the preview version of PhpStorm 8, live templates show up automatically as you type the first few letters. You should still press `Cmd + J` to filter out everything else (classes, variables, etc).
 
+## Supported Live Templates ##
+
+- [Blade](#blade)
+- [Input](#requests--input)
+- [Request](#requests--input)
+- [Cookie](#requests--input)
+- [Route](#routes)
+- [View](#views-responses-and-redirects)
+- [Response](#views-responses-and-redirects)
+- [Redirect](#views-responses-and-redirects)
+- [Schema](#schema-builder) (includes column types)
+- [Cache](#cache)
+- [Form](#form)
+
 ### Blade ###
 
 ![Laravel Blade Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/laravel-blade-screenshot.png)
