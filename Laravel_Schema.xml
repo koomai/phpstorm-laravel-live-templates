@@ -641,7 +641,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="after" value="-&gt;after('$NAME$');$END$" description="Set INTEGER to UNSIGNED" toReformat="false" toShortenFQNames="true">
+  <template name="after" value="-&gt;after('$NAME$');$END$" description="Add Column AFTER" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="'column'" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
