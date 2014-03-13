@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Laravel-Helpers">
+  <template name="Helper::action" value="action('$CONTROLLER$', $PARAMS$);$END$" description="Generate a URL for a given controller action" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROLLER" expression="" defaultValue="&quot;HomeController@getIndex&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;$params&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::route" value="route('$ROUTE$', $PARAMS$);$END$" description="Generate a URL for a given named route" toReformat="true" toShortenFQNames="true">
+    <variable name="ROUTE" expression="" defaultValue="&quot;routeName&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;$params&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::asset" value="asset('$PATH$');$END$" description="Generate a URL for an asset" toReformat="true" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="&quot;img/photo.jpg&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::link_to" value="link_to('$LINK$', $TITLE$, $ATTRIBUTES$, $SECURE$);$END$" description="Generate a HTML link to the given URL" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;foo/bar&quot;" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="&quot;$title&quot;" alwaysStopAt="true" />
+    <variable name="ATTRIBUTES" expression="" defaultValue="&quot;$attributes&quot;" alwaysStopAt="true" />
+    <variable name="SECURE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::link_to_asset" value="link_to_asset('$LINK$', $TITLE$, $ATTRIBUTES$, $SECURE$);$END$" description="Generate a HTML link to the given asset" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;foo/bar.zip&quot;" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="&quot;$title&quot;" alwaysStopAt="true" />
+    <variable name="ATTRIBUTES" expression="" defaultValue="&quot;$attributes&quot;" alwaysStopAt="true" />
+    <variable name="SECURE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::link_to_route" value="link_to_route('$LINK$', $TITLE$, $PARAMETERS$, $ATTRIBUTES$);$END$" description="Generate a HTML link to the given route" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;route.name&quot;" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="&quot;$title&quot;" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="&quot;$parameters&quot;" alwaysStopAt="true" />
+    <variable name="ATTRIBUTES" expression="" defaultValue="&quot;$attributes&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::link_to_action" value="link_to_action('$LINK$', $TITLE$, $PARAMETERS$, $ATTRIBUTES$);$END$" description="Generate a HTML link to the given controller action" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;HomeController@index&quot;" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="&quot;$title&quot;" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="&quot;$parameters&quot;" alwaysStopAt="true" />
+    <variable name="ATTRIBUTES" expression="" defaultValue="&quot;$attributes&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::secure_asset" value="secure_asset('$LINK$', $TITLE$, $ATTRIBUTES$);$END$" description="Generate a HTML link to the given asset using HTTPS" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;foo/bar.zip&quot;" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="&quot;$title&quot;" alwaysStopAt="true" />
+    <variable name="ATTRIBUTES" expression="" defaultValue="&quot;$attributes&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::secure_url" value="secure_url('$LINK$'$PARAMS$);$END$" description="Generate a fully qualified URL to a given path using HTTPS" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;foo/bar&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::url" value="url('$LINK$'$PARAMS$ $SECURE$);$END$" description="Generate a fully qualified URL to a given path" toReformat="true" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="&quot;foo/bar&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;, $parameters&quot;" alwaysStopAt="true" />
+    <variable name="SECURE" expression="" defaultValue="&quot;, null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="Helper::path" value="$PATH$" description="Paths to directories" toReformat="true" toShortenFQNames="true">
+    <variable name="PATH" expression="enum(&quot;app_path()&quot;, &quot;base_path()&quot;, &quot;public_path()&quot;, &quot;storage_path()&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
