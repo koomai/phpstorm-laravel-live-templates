@@ -35,6 +35,8 @@ For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `C
 - [Schema](#schema-builder) (includes column types)
 - [Cache](#cache)
 - [Form](#form)
+- [Session](#session)
+- [Helpers](#helpers)
 
 ### Blade ###
 
@@ -79,6 +81,13 @@ All Route verbs are labelled `get` by default, but you can change it easily once
 
 ![Laravel Form Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/form-demo.png)
 
+### Session ###
+
+![Laravel Session Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/session-demo.png)
+
+### Helpers ###
+
+![Laravel Helpers Screenshot](https://raw.github.com/koomai/phpstorm-laravel-live-templates/master/images/helpers-demo.png)
 
 ==========
 #### Other goodies ####
