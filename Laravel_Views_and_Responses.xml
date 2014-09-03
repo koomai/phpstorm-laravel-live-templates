@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Laravel-Views-and-Responses">
-  <template name="Response:json" value="Response::json($ARRAY$);$END$" description="Create a JSON Response" toReformat="false" toShortenFQNames="true">
+  <template name="Response::json" value="Response::json($ARRAY$);$END$" description="Create a JSON Response" toReformat="false" toShortenFQNames="true">
     <variable name="ARRAY" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
