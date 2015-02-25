@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Laravel-Form">
   <template name="Form::open" value="{!! Form::open(['$TYPE$' =&gt; '$TARGET$'$OPTIONS$]) !!}&#10;&#9;$END$&#10;{!! Form::close() !!}" description="Open a Form" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="enum(&quot;route&quot;, &quot;url&quot;, &quot;action&quot;)" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
@@ -45,6 +44,16 @@
     <variable name="NAME" expression="" defaultValue="&quot;email&quot;" alwaysStopAt="true" />
     <variable name="DEFAULT" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <variable name="OPTION" expression="" defaultValue="&quot;, ['class' =&gt; 'form-control']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="Form::textarea" value="{!! Form::textarea('$NAME$', '$DEFAULT$'$OPTION$) !!}$END$" description="Generate a Textarea Input element (name, default, attributes)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="body" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -154,4 +163,3 @@
     </context>
   </template>
 </templateSet>
-
