@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Laravel-Form">
   <template name="Form::open" value="{!! Form::open(['$TYPE$' =&gt; '$TARGET$'$OPTIONS$]) !!}&#10;&#9;$END$&#10;{!! Form::close() !!}" description="Open a Form" toReformat="false" toShortenFQNames="true">
     <variable name="TYPE" expression="enum(&quot;route&quot;, &quot;url&quot;, &quot;action&quot;)" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
