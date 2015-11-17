@@ -52,8 +52,8 @@
     </context>
   </template>
   <template name="Form::hidden" value="{{ Form::hidden('$NAME$', '$DEFAULT$'$OPTION$) }}$END$" description="Generate a Hidden Input element (name, default)" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;email&quot;" alwaysStopAt="true" />
-    <variable name="DEFAULT" expression="value" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="value" alwaysStopAt="true" />
     <variable name="OPTION" expression="" defaultValue="&quot;, ['id' =&gt; 'id']&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
