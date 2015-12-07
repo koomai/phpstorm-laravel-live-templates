@@ -51,6 +51,16 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="Form::hidden" value="{!! Form::hidden('$NAME$', '$DEFAULT$'$OPTION$) !!}$END$" description="Generate a Hidden Input element (name, default)" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="value" alwaysStopAt="true" />
+    <variable name="OPTION" expression="" defaultValue="&quot;, ['id' =&gt; 'id']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
   <template name="Form::textarea" value="{!! Form::textarea('$NAME$', '$DEFAULT$'$OPTION$) !!}$END$" description="Generate a Textarea Input element (name, default, attributes)" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="body" alwaysStopAt="true" />
     <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
