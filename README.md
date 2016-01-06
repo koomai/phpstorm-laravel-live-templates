@@ -26,6 +26,7 @@ For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `C
 
 ## Supported Live Templates ##
 
+- [Annotations](#annotations)
 - [Blade](#blade)
 - [Input](#requests--input)
 - [Request](#requests--input)
@@ -39,6 +40,12 @@ For example, for the Schema Builder, type `Sc` or `Sch` or `Schema` and press `C
 - [Form](#form)
 - [Session](#session)
 - [Helpers](#helpers)
+
+### Annotations ###
+
+![Route Annotations Screenshot](https://raw.githubusercontent.com/koomai/phpstorm-laravel-live-templates/develop/images/annotations.png)
+
+Tip: Type `@` and then `Cmd+J` inside a docblock to see the options.
 
 ### Blade ###
 

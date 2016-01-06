@@ -286,5 +286,59 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="@get" value="@$VERB$(&quot;$PATH$&quot;$OPTIONS$)$END$" description="Annotation - Basic Route (@Get, @Post,...)" toReformat="false" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;Get&quot;, &quot;Post&quot;, &quot;Put&quot;, &quot;Patch&quot;,&quot;Delete&quot;)" defaultValue="&quot;Get&quot;" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="" defaultValue="&quot;, as=\&quot;route.name\&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@where" value="@Where({$CONDITION$})$END$" description="Annotation - Route Constraints" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="&quot;\&quot;id\&quot;: \&quot;[0-9]+\&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@getWhere" value="@$VERB$(&quot;$PATH$&quot;$OPTIONS$)&#10;* @Where({$CONDITION$})$END$" description="Annotation - Basic Route with Constraints" toReformat="false" toShortenFQNames="true">
+    <variable name="VERB" expression="enum(&quot;Get&quot;, &quot;Post&quot;, &quot;Put&quot;, &quot;Patch&quot;,&quot;Delete&quot;)" defaultValue="&quot;Get&quot;" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="&quot;/{id}&quot;" alwaysStopAt="true" />
+    <variable name="OPTIONS" expression="" defaultValue="&quot;, as=\&quot;route.name\&quot;&quot;" alwaysStopAt="true" />
+    <variable name="CONDITION" expression="" defaultValue="&quot;\&quot;id\&quot;: \&quot;[0-9]+\&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@hears" value="@Hears(&quot;$EVENT$&quot;)$END$" description="Annotation - Event" toReformat="false" toShortenFQNames="true">
+    <variable name="EVENT" expression="" defaultValue="&quot;user.login&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@middleware" value="@Middleware(&quot;$NAME$&quot;, $OPTION$={&quot;$ACTION$&quot;})" description="Annotation - Middleware" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;FooMiddleware&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="enum(&quot;only&quot;,&quot;except&quot;)" defaultValue="&quot;only&quot;" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="&quot;update&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@resource" value="@Resource(&quot;$NAME$&quot;, $OPTION$={&quot;$CONSTRAINTS$&quot;})" description="Annotation - Resource" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;users&quot;" alwaysStopAt="true" />
+    <variable name="OPTION" expression="enum(&quot;only&quot;,&quot;except&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONSTRAINTS" expression="" defaultValue="&quot;update&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@controller" value="@Controller(&quot;$OPTION$&quot;)$END$" description="Annotation - Controller" toReformat="false" toShortenFQNames="true">
+    <variable name="OPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
 </templateSet>
 
