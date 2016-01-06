@@ -1,5 +1,3 @@
-#### Update: Laravel 5 specific templates are on the develop branch for now. ####
-
 ### Laravel Live Templates for PhpStorm ###
 
 How to:
