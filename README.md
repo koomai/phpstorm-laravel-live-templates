@@ -10,6 +10,7 @@ How to:
 
 e.g. `~/Library/Preferences/WebIde70/templates` on OS X for PhpStorm 7
 
+###### PhpStorm 2016.1 `%user%\.PhpStorm2016.1\config\templates` on Windows for PhpStorm 2016.1 ######
 
 2) Restart PhpStorm.
 
