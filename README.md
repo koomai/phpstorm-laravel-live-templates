@@ -8,7 +8,7 @@ How to:
 * Linux: `~\.<product name><version number>\config\templates`
 * OS X: `~/Library/Preferences/<product name><version number>/templates`
 
-e.g. `~/Library/Preferences/WebIde70/templates` on OS X for PhpStorm 7
+e.g. `~/Library/Preferences/PhpStorm2016.1/templates` on OS X for PhpStorm 2016
 
 
 2) Restart PhpStorm.
