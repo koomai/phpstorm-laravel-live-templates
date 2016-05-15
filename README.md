@@ -10,6 +10,7 @@ How to:
 
 e.g. `~/Library/Preferences/PhpStorm2016.1/templates` on OS X for PhpStorm 2016
 
+###### PhpStorm 2016.1 `%user%\.PhpStorm2016.1\config\templates` on Windows for PhpStorm 2016.1 ######
 
 2) Restart PhpStorm.
 
