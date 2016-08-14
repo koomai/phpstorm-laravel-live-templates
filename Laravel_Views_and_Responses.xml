@@ -74,8 +74,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="Response::make" value="Response::make($CONTENT$, $HEADER$);$END$" description="Create a Custom Response" toReformat="false" toShortenFQNames="true">
+  <template name="Response::make" value="Response::make($CONTENT$, $STATUS$, $HEADER$);$END$" description="Create a Custom Response" toReformat="false" toShortenFQNames="true">
     <variable name="CONTENT" expression="" defaultValue="&quot;$content&quot;" alwaysStopAt="true" />
+    <variable name="STATUS" expression="" defaultValue="&quot;200&quot;" alwaysStopAt="true" />
     <variable name="HEADER" expression="" defaultValue="&quot;$headers&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
