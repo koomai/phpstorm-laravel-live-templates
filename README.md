@@ -13,7 +13,7 @@ e.g. `~/Library/Preferences/PhpStorm2016.1/templates` on OS X for PhpStorm 2016
 
 2) Restart PhpStorm.
 
-3) To see all templates, go to *Preferences->Live Templates* and expand the Template Group.
+3) To see all templates, go to *File->Settings...->Editor->Live Templates*.
 
 
 It's hard to remember shortcuts when there are a large number of options. A more efficient way is to take advantage of PhpStorm's *Insert Live Template* shortcut. Type as few or as many letters as you want and press `Cmd + J`. Then continue typing to filter the options.
