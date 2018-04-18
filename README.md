@@ -5,7 +5,7 @@ How to:
 1) Download and copy the *xml* file(s) to your templates folder:
 
 * Windows: `<your home directory>\.<product name><version number>\config\templates`
-* Linux: `~\.<product name><version number>\config\templates`
+* Linux: `~/.<product name><version number>/config/templates`
 * OS X: `~/Library/Preferences/<product name><version number>/templates`
 
 e.g. `~/Library/Preferences/PhpStorm2016.1/templates` on OS X for PhpStorm 2016
