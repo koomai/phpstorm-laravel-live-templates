@@ -2,18 +2,13 @@
 
 How to:
 
-1) Download and copy the *xml* file(s) to your templates folder:
+1) Go to *Preferences | Tools | Settings Repository*
 
-* Windows: `<your home directory>\.<product name><version number>\config\templates`
-* Linux: `~/.<product name><version number>/config/templates`
-* OS X: `~/Library/Preferences/<product name><version number>/templates`
+2) Add Read-only Source https://github.com/koomai/phpstorm-laravel-live-templates
 
-e.g. `~/Library/Preferences/PhpStorm2016.1/templates` on OS X for PhpStorm 2016
+3) Restart PhpStorm.
 
-
-2) Restart PhpStorm.
-
-3) To see all templates, go to *Preferences->Live Templates* and expand the Template Group.
+4) To see all templates, go to *Preferences | Live Templates* and expand the Template Group.
 
 
 It's hard to remember shortcuts when there are a large number of options. A
