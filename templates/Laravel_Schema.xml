@@ -663,7 +663,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="Schema::create" value="Schema::create('$NAME$', function($table)&#10;{&#10;    $table-&gt;increments('id');&#10;    $END$&#10;});" description="Create new table" toReformat="false" toShortenFQNames="true">
+  <template name="Schema::create" value="Schema::create('$NAME$', function(Blueprint $table) {&#10;    $table-&gt;increments('id');&#10;    $END$&#10;});" description="Create new table" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="&quot;users&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -708,7 +708,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="Schema::connection" value="Schema::connection('$CONNECTION$')-&gt;$OP$('$NAME$', function($table)&#10;{&#10;    $table-&gt;increments('id');&#10;    $END$&#10;});" description="Specify connection for schema operation" toReformat="false" toShortenFQNames="true">
+  <template name="Schema::connection" value="Schema::connection('$CONNECTION$')-&gt;$OP$('$NAME$', function(Blueprint $table) {&#10;    $table-&gt;increments('id');&#10;    $END$&#10;});" description="Specify connection for schema operation" toReformat="false" toShortenFQNames="true">
     <variable name="CONNECTION" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
     <variable name="OP" expression="" defaultValue="&quot;create&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="&quot;users&quot;" alwaysStopAt="true" />
@@ -732,7 +732,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="Schema::table" value="Schema::table('$NAME$', function($table)&#10;{&#10;    $END$&#10;});" description="Update an existing table" toReformat="false" toShortenFQNames="true">
+  <template name="Schema::table" value="Schema::table('$NAME$', function(Blueprint $table) {&#10;    $END$&#10;});" description="Update an existing table" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="&quot;users&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
