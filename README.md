@@ -1,5 +1,9 @@
 ### :warning: `This repository is no longer maintained.`
 
+I no longer use this repository and do not maintain it anymore. 
+
+My recommendation is to use [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper), which is a much more robust solution for autocompletion and static checking.
+
 ## Laravel Live Templates for PhpStorm ##
 
 How to:
