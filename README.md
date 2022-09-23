@@ -1,4 +1,6 @@
-### Laravel Live Templates for PhpStorm ###
+### :warning: `This repository is no longer maintained.`
+
+## Laravel Live Templates for PhpStorm ##
 
 How to:
 
